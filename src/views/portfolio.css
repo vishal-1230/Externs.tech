@@ -1,14 +1,57 @@
 
 .images{
     position: relative;
-    top: 160px;
+    margin-top: 160px;
     width: 100vw;
-    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 body{
     overflow-x: hidden;
 
+}
+
+.portfolioCard{
+    /* width: 400px; */
+    height: 300px;
+    /* height: fit-content; */
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: #000 0 0 3px 1px;
+    padding: 5px;
+    margin: 20px;
+    transition-duration: 150ms;
+    cursor: pointer;
+}
+.portfolioCard:hover{
+    /* width: 430px; */
+    height: 305px;
+    box-shadow: #000 0 0 6px 1px;
+}
+
+.portfolioCardImage{
+    /* width: 100%; */
+    height: 90%;
+    /* padding-bottom: 7.5px; */
+    margin-bottom: 14px;
+    margin-bottom: 5px;
+    align-self: center;
+    margin: auto;
+    margin-bottom: 3px;
+    /* border-bottom: 0.1px #949494 solid; */
+}
+
+.portfolioCardTitle{
+    font-size: 18px;
+    font-style: bolder;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    padding-top: 20px;
 }
 
 @media screen and (min-width: 600px){

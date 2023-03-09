@@ -1,0 +1,34 @@
+[
+    {
+        "title": "YAR Media",
+        "images": ["yar1.png", "yar2.png", "yar3.png", "yar4.png"],
+        "coverImage": "yar1.png",
+        "url": "https://yarmedia.in/",
+        "techStack": "MERN (For frontend - ReactJS, For Backend - NodeJS+MongoDB",
+        "completedIn": "1 Month"
+    },
+    {
+        "title": "CryptoCurrency Trading Bot",
+        "images": [],
+        "coverImage": "crypto4.png",
+        "url": "https://ApexCrypto.tech/",
+        "techStack": "MERN (For frontend - ReactJS, For Backend - NodeJS+MongoDB",
+        "completedIn": "1 Month"
+    },
+    {
+        "title": "QR Digital Menu",
+        "images": [],
+        "coverImage": "qr1.jpeg",
+        "url": "",
+        "techStack": "ReactJS",
+        "completedIn": "3-4 Days"
+    },
+    {
+        "title": "CatchMySnap - Photographer's Freelancer",
+        "images": [],
+        "coverImage": "cms1.jpeg",
+        "url": "",
+        "techStack": "MERN (For frontend - ReactJS, For Backend - NodeJS+MongoDB",
+        "completedIn":"1.5 Months"
+    }
+]

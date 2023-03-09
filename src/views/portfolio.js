@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './home.css'
 import './portfolio.css'
 import { Link } from 'react-router-dom'
+import PortfolioCard from './PortfolioCard'
+import projects from '../projects.json'
 
 function portfolio() {
 
@@ -17,6 +19,8 @@ function portfolio() {
     document.getElementById('full-image').style.display='none'
     document.getElementById('close').style.display='none'
   }
+
+  const [currentProject, setcurrentProject] = useState({title: "abcd"})
 
   return (
     <div>
@@ -69,20 +73,31 @@ function portfolio() {
       </div>
     <div className="image-content">
         <div className="images">
-            <img src="/projImages/yar1.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/yar1.png")}} alt="" width="300" />
-            <img src="/projImages/yar2.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/yar2.png")}} alt="" width="300" />
-            <img src="/projImages/yar3.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/yar3.png")}} alt="" width="300" />
-            <img src="/projImages/yar4.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/yar4.png")}} alt="" width="300" />
-            <img src="/projImages/crypto1.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/crypto1.png")}} alt="" width="300" />
-            <img src="/projImages/crypto2.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/crypto2.png")}} alt="" width="300" />
-            <img src="/projImages/crypto3.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/crypto3.png")}} alt="" width="300" />
-            <img src="/projImages/qr1.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/qr1.jpeg")}} alt="" width="300" />
-            <img src="/projImages/qr2.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/qr2.jpeg")}} alt="" width="300" />
-            <img src="/projImages/crypto4.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/crypto4.png")}} alt="" width="300" />
-            <img src="/projImages/cms1.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/cms1.jpeg")}} alt="" width="300" />
-            <img src="/projImages/cms2.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/cms2.jpeg")}} alt="" width="300" />
-            <img src="/projImages/mtech1.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/mtech1.jpeg")}} alt="" width="300" />
-            <img src="/projImages/mtech2.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/mtech2.jpeg")}} alt="" width="300" />
+      {currentProject.title}
+          {
+            projects.map((project)=>{
+              return <PortfolioCard coverImage={"/projImages//"+project.coverImage} title={project.title} setcurrentProject={setcurrentProject} images={project.images} url={project.url} techStack={project.techStack} completedIn={project.completedIn} />
+            })
+          }
+            {/* <PortfolioCard coverImage={"/projImages/yar1.png"} title="YAR Media" />
+            <PortfolioCard coverImage={"/projImages/crypto4.png"} title="CryptoCurrency Trading Bot" />
+            <PortfolioCard coverImage={"/projImages/qr1.jpeg"} title="QR Digital Menu" />
+            <PortfolioCard coverImage={"/projImages/cms1.jpeg"} title="CatchMySnap - Photographer's Freelancer.in" />
+            <PortfolioCard coverImage={"/projImages/mtech1.jpeg"} title="PetPlanet - Pet Shop ECommerce" /> */}
+            {/* <img src="/projImages/yar1.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/yar1.png")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/yar2.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/yar2.png")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/yar3.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/yar3.png")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/yar4.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/yar4.png")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/crypto1.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/crypto1.png")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/crypto2.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/crypto2.png")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/crypto3.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/crypto3.png")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/qr1.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/qr1.jpeg")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/qr2.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/qr2.jpeg")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/crypto4.png" className="portfolio-img" onClick={()=>{onImgClick("/projImages/crypto4.png")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/cms1.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/cms1.jpeg")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/cms2.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/cms2.jpeg")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/mtech1.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/mtech1.jpeg")}} alt="" width="300" /> */}
+            {/* <img src="/projImages/mtech2.jpeg" className="portfolio-img" onClick={()=>{onImgClick("/projImages/mtech2.jpeg")}} alt="" width="300" /> */}
         </div>
         <div id="image-viewer">
             <span className="close" id="close" onClick={onCrossClick}>&times;</span>

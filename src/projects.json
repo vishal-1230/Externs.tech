@@ -1,0 +1,42 @@
+[
+    {
+        "title": "YAR Media",
+        "images": ["yar1.png", "yar2.png", "yar3.png", "yar4.png"],
+        "coverImage": "yar1.png",
+        "url": "https://yarmedia.in/",
+        "techStack": "MERN (For frontend - ReactJS, For Backend - NodeJS+MongoDB",
+        "completedIn": "1 Month"
+    },
+    {
+        "title": "CryptoCurrency Trading Bot",
+        "images": ["crypto1.png", "crypto2.png", "crypto3.png", "crypto4.png"],
+        "coverImage": "crypto4.png",
+        "url": "https://ApexCrypto.tech/",
+        "techStack": "MERN (For frontend - ReactJS, For Backend - NodeJS+MongoDB",
+        "completedIn": "1 Month"
+    },
+    {
+        "title": "QR Digital Menu",
+        "images": ["qr1.jpeg", "qr2.jpeg"],
+        "coverImage": "qr1.jpeg",
+        "url": "",
+        "techStack": "ReactJS",
+        "completedIn": "3-4 Days"
+    },
+    {
+        "title": "CatchMySnap - Photographer's Freelancer",
+        "images": ["cms1.jpeg", "cms2.jpeg"],
+        "coverImage": "cms1.jpeg",
+        "url": "",
+        "techStack": "MERN (For frontend - ReactJS, For Backend - NodeJS+MongoDB",
+        "completedIn":"1.5 Months"
+    },
+    {
+        "title": "PetPlanet - Pet ECommerce",
+        "images": ["mtech1.jpeg", "mtech2.jpeg"],
+        "coverImage": "mtech1.jpeg",
+        "url": "",
+        "techStack": "ReactJS",
+        "completedIn": "1 Week"
+    }
+]
