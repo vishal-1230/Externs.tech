@@ -20,7 +20,7 @@ function portfolio() {
     document.getElementById('close').style.display='none'
   }
 
-  const [currentProject, setcurrentProject] = useState({title: "abcd"})
+  const [currentProject, setcurrentProject] = useState({})
 
   return (
     <div>
@@ -73,7 +73,6 @@ function portfolio() {
       </div>
     <div className="image-content">
         <div className="images">
-      {currentProject.title}
           {
             projects.map((project)=>{
               return <PortfolioCard coverImage={"/projImages//"+project.coverImage} title={project.title} setcurrentProject={setcurrentProject} images={project.images} url={project.url} techStack={project.techStack} completedIn={project.completedIn} />
