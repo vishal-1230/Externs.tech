@@ -4,6 +4,7 @@ import './portfolio.css'
 import { Link } from 'react-router-dom'
 import PortfolioCard from './PortfolioCard'
 import projects from '../projects.json'
+import ProjectDetails from './ProjectDetails'
 
 function portfolio() {
 
@@ -71,6 +72,7 @@ function portfolio() {
           </div>
         </div>
       </div>
+      <ProjectDetails />
     <div className="image-content">
         <div className="images">
           {

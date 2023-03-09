@@ -8,7 +8,7 @@ export default function PortfolioCard(props) {
         techStack: props.techStack,
         url: props.url,
         completedIn: props.completedIn
-    })}}>
+    }); document.getElementById("projectDetailsContainer").style.display="flex"}}>
         <img src={props.coverImage} alt={props.title + " Cover Image"} className="portfolioCardImage" />
         <span className="portfolioCardTitle">{props.title}</span>
     </div>)

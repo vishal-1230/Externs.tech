@@ -54,6 +54,36 @@ body{
     padding-top: 20px;
 }
 
+.projectDetailsContainer{
+    position: fixed;
+    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* display: block; */
+    height: 100vh;
+    width: 100vw;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectDetails{
+    height: 90vh;
+    width: 90vw;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+.closeIcon{
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 600px){
     .portfolio-img{
         height: 200px;
