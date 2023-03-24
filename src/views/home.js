@@ -353,8 +353,8 @@ const Home = (props) => {
           />
           <button className="home-button1 Anchor button">SEND</button>
           <div className='contact-icons'>
-            <a href="tel:+918373958829" className='contact-link'><IoIosCall className='contact-icon' /><span style={{marginTop: '5px', fontWeight: 700}}> Call Us <span className='num'>&nbsp;&nbsp;+91 8373958829</span></span></a>
-            <a href="mailto:vishalvishwajeet422@gmail.com" className='contact-link'><IoIosMail className='contact-icon' /><span style={{marginTop: '5px', fontWeight: 700}}> Mail Us <span className='mail'>&nbsp;&nbsp;vishalvishwajeet422@gmail.com</span></span></a>
+            <a href="tel:+919304882841" className='contact-link'><IoIosCall className='contact-icon' /><span style={{marginTop: '5px', fontWeight: 700}}> Call Us <span className='num'>&nbsp;&nbsp;+91 9304882841</span></span></a>
+            <a href="mailto:mail@externs.tech" className='contact-link'><IoIosMail className='contact-icon' /><span style={{marginTop: '5px', fontWeight: 700}}> Mail Us <span className='mail'>&nbsp;&nbsp;mail@externs.tech</span></span></a>
           </div>
         </div>
       </div>
