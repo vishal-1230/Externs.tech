@@ -1,5 +1,4 @@
 import React from "react"
-import './portfolio.css'
 
 export default function PortfolioCard(props) {
     return (<div className="portfolioCard" onClick={()=>{props.setcurrentProject({

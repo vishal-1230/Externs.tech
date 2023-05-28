@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import './home.css'
-import './portfolio.css'
 import { Link } from 'react-router-dom'
 import PortfolioCard from './PortfolioCard'
 import projects from '../projects.json'

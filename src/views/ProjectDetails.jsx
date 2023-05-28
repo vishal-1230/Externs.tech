@@ -1,5 +1,4 @@
 import React from "react";
-import './portfolio.css'
 
 export default function ProjectDetails(props) {
     return <div className="projectDetailsContainer" id="projectDetailsContainer">
