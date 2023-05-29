@@ -2,17 +2,17 @@ import React from 'react'
 
 function Faqs() {
     return (
-        <div className="home-faqs">
-            <h2 className="home-text24 Section-Heading">
+        <div className="w-5/6 m-auto">
+            <h2 className="font-bold text-5xl font-Raleways text-center p-8">
                 Checkout the most common questions
             </h2>
-            <div className="home-content-container4">
-                <div className="home-faq">
-                    <div className="home-question-container">
-                        <span className="home-question">What is Externs?</span>
+            <div className="p-2">
+                <div className="p2 rounded-lg border-2 border-gray-300 drop-shadow-2xl">
+                    <div className="bg-gray-300">
+                        <span className="font-bold text-2xl p-2">What is Externs?</span>
                     </div>
-                    <div className="home-answer-container">
-                        <span className="home-answer">
+                    <div className="p-2">
+                        <span className="text-xl">
                             Externs is a software solutions or Product Creation & Management company
                             that specializes in providing custom software development, Web
                             Design & Development, Android/IOS Development and Logo & UI/UX design services to
@@ -21,14 +21,15 @@ function Faqs() {
                         </span>
                     </div>
                 </div>
-                <div className="home-faq1">
-                    <div className="home-question-container1">
-                        <span className="home-question1">
+                <br />
+                <div className="rounded-lg border-2 border-gray-300 drop-shadow-2xl">
+                <div className="bg-gray-300">
+                        <span className="font-bold text-2xl p-2 ">
                             What services does We offer?
                         </span>
                     </div>
-                    <div className="home-answer-container1">
-                        <span className="home-answer1">
+                    <div className="p-2">
+                        <span className="text-xl">
                             {' '}
                             In addition to custom software development, web design &amp;
                             development, logo &amp; UI/UX design, Externs also offers a
@@ -39,14 +40,15 @@ function Faqs() {
                         </span>
                     </div>
                 </div>
-                <div className="home-faq2">
-                    <div className="home-question-container2">
-                        <span className="home-question2">
+                <br />
+                <div className="rounded-lg border-2 border-gray-300 drop-shadow-2xl">
+                <div className="bg-gray-300">
+                        <span className="font-bold text-2xl p-2 ">
                             What industries do We serve?
                         </span>
                     </div>
-                    <div className="home-answer-container2">
-                        <span className="home-answer2">
+                    <div className="p-2 ">
+                        <span className=" text-xl">
                             <span>
                                 Externs has experience serving clients in a variety of
                                 industries, including finance, healthcare, retail, e-commerce,
@@ -57,6 +59,7 @@ function Faqs() {
                         </span>
                     </div>
                 </div>
+                <br />
             </div>
         </div>)
 }

@@ -3,7 +3,7 @@ import particlesConfig from "./config/particles-config";
 
 const ParticlesBackground = () => {
     return (
-        <Particles className="particles" params={particlesConfig} />
+        <Particles params={particlesConfig} />
     )
 }
 export default ParticlesBackground
