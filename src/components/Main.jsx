@@ -1,15 +1,15 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 function Main() {
     return (
-        <div className="home-container">
-            <div className="home-container02">
-                <div className="home-hero">
-                    <div className="home-hero-text-container">
-                        <h1 className="home-heading2 Section-Heading">
+        <div className="">
+            <div className="">
+                <div className='flex'>
+                    <div className="m-auto">
+                        <h1 className='font-bold text-5xl font-Raleways text-center p-8'>
                             We help Startups build Their Products from Scratch
                         </h1>
-                        <span className="home-text !text-white">
+                        <span className='text-xl'>
                             <span>
                                 We are a Digital Product Development Team, Aimed at Providing
                                 you the Best Website, Android/IOS Development, Custom
@@ -19,34 +19,24 @@ function Main() {
                             <br></br>
                             <br></br>
                         </span>
-                        <div className="home-cta-btn-container">
+                        <div className="flex justify-center">
                             <Link to='/portfolio'>
-                                <button className="home-cta-btn button Anchor">OUR WORK</button>
+                                <button className='bg-black text-white border-2 drop-shadow-xl text-3xl p-4 rounded-xl m-4'>OUR WORK</button>
                             </Link>
-                            {/* <Link to='/'> */}
-                            <a href="#deliverables">
-                                <button className="home-cta-btn1 button Anchor">SERVICES</button>
+                            <a href="">
+                                <button className='border-black border-2 drop-shadow-xl text-3xl p-4 rounded-xl m-4  font-semibold'>SERVICES</button>
                             </a>
-                            {/* </Link> */}
                         </div>
                     </div>
-                    <img
-                        alt="image"
-                        src="playground_assets/website-mockup-template_68185-389-1500w.webp"
-                        className="home-image1"
-                    />
+                    <div className='p-4'>
+                        <img
+                            alt="image"
+                            src="playground_assets/website-mockup-template_68185-389-1500w.webp"
+                            className="w-3/4 m-auto rounded-xl "
+                        />
+                    </div>
                 </div>
             </div>
-
-
-            <div className="home-section-separator2"></div>
-
-            <div className="home-section-separator3"></div>
-            <div className="home-section-separator4"></div>
-
-            <div className="home-section-separator5"></div>
-
-            <div className="home-section-separator6"></div>
         </div>
     )
 }
